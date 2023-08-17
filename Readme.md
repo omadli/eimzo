@@ -1,3 +1,7 @@
+## Requirements
+ - `OpenSSL`
+ - `Python 3.8+`
+ - `Django 4.2`
 
 ## Installation
 ### Create virtual environment
@@ -34,6 +38,20 @@ $ python manage.py migrate
 ```shell
 $ python manage.py createsuperuser
 ```
+
+## Notes
+Check the `OpenSSL`:
+```shell
+$ openssl version
+```
+If you have `OpenSSL 3.1+` version you are fine.
+ 
+If `OpenSSL` is not installed on your computer install it:
+ - Debian/Linux
+ ```shell
+$ sudo apt install openssl
+```
+ - In Windows: [Official OpenSSL download page](https://www.openssl.org/source/)
 
 ## Running
 ```shell

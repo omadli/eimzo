@@ -137,3 +137,12 @@ class Key(models.Model):
         help_text=_("Unique ID"),
     )
     
+    def __str__(self) -> str:
+        if self.type == 2:
+            return self.organization.upper()
+        else:
+            return self.full_name.upper()
+    
+    class Meta:
+        unique_together = ("stir", "uid")
+    
